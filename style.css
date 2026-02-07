@@ -31,9 +31,12 @@ h4 {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  /* widht to fill the image in available space and height:auto to keep the correct proportion */
 }
 
-@media (min-width: 960px) {
+@media (max-width: 959px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
