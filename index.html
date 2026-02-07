@@ -21,6 +21,8 @@
 
   <main>
     <!-- starting picture this assignment with tag picture, I choose to put <main> to organize the picture as a main content of the page, and also helps me to understand the structure in a better way -->
+
+    <!-- LANDSCAPE IMAGES-->
     <picture>
       <!-- I'm using the "w descriptor" because I want to adapt the image according to its size on the screen. Specifically, I don't want to adapt the image based on pixel density, which would use the same image size but at 1x, 2x, or 3x. In this situation, I have varying sizes, so I'll base my adaptation on them. 
        (I used the translator to help me in this sentence because I'm just able to explain this in portuguese :(. I'm explaining because I made a lot of english mistakes so would be easy to notice when has no mistakes lol)-->
@@ -33,7 +35,28 @@
       images/landscape/museum-1920px.jpg 1920w,
       images/landscape/museum-2160px.jpg 2160w,
       images/landscape/museum-2880px.jpg 2880w
-      " />
+      "
+      media="(max-width:959px)"
+
+      sizes="100vw" /> 
+      <!-- 100vw because it's 100% of the screen -->
+
+    <!-- SQUARE IMAGES -->
+      <source srcset="images/square/museum-480x480.jpg 480w,
+      images/square/museum-640x640.jpg 640w,
+      images/square/museum-800x800.jpg 800w,
+      images/square/museum-960x960.jpg 960w,
+      images/square/museum-1280x1280.jpg 1280w,
+      images/square/museum-1440x1440.jpg 1440w,
+      images/square/museum-1600x1600.jpg 1600w,
+      images/square/museum-1920x1920.jpg 1920w,
+      images/square/museum-2400x2400.jpg 2400w
+      "
+      media="(min-width:960px)"
+
+      sizes="50vw" />
+      <!-- 50vw because it's 50% of the screen -->
+       
       <!-- I choose 960px as a reference because it was given in the assignment examples. So based on "Below 960px" and "960px and above", I tought it was safe to use this one as a reference. -->
       <img class="landscape-img"
           src="images/landscape/museum-960px.jpg"
