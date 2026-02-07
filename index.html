@@ -18,6 +18,28 @@
     <img src="images/museum.jpg" alt="placeholder">
 
   </header>
+
+  <main>
+    <!-- starting picture this assignment with tag picture, I choose to put <main> to organize the picture as a main content of the page, and also helps me to understand the structure in a better way -->
+    <picture>
+      <!-- I'm using the "w descriptor" because I want to adapt the image according to its size on the screen. Specifically, I don't want to adapt the image based on pixel density, which would use the same image size but at 1x, 2x, or 3x. In this situation, I have varying sizes, so I'll base my adaptation on them. 
+       (I used the translator to help me in this sentence because I'm just able to explain this in portuguese :(. I'm explaining because I made a lot of english mistakes so would be easy to notice when has no mistakes lol)-->
+      <source srcset="images/landscape/museum-320px.jpg 320w,
+      images/landscape/museum-480px.jpg 480w,
+      images/landscape/museum-640px.jpg 640w,
+      images/landscape/museum-720px.jpg 720w,
+      images/landscape/museum-960px.jpg 960w,
+      images/landscape/museum-1440px.jpg 1440w,
+      images/landscape/museum-1920px.jpg 1920w,
+      images/landscape/museum-2160px.jpg 2160w,
+      images/landscape/museum-2880px.jpg 2880w
+      " />
+      <!-- I choose 960px as a reference because it was given in the assignment examples. So based on "Below 960px" and "960px and above", I tought it was safe to use this one as a reference. -->
+      <img class="landscape-img"
+          src="images/landscape/museum-960px.jpg"
+          alt="A museum room full of canvas and blue couches">
+    </picture>
+  </main>
 </body>
 
 </html>
